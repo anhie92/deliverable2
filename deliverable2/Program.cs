@@ -57,7 +57,7 @@ namespace deliverable2
                 Console.WriteLine($"and {P} people for the buffet");
                 Console.WriteLine($"your total for food will be ${buffet}.");
                 Console.WriteLine($"your total for drinks will be ${dtotal}.");
-                Console.WriteLine($"your total will be ${total= Math.Round(total, 2)}.");
+                Console.WriteLine($"your total will be ${Math.Round(total, 2)}.");
 
             }
             else
