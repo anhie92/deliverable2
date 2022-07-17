@@ -7,7 +7,6 @@ namespace deliverable2
         static void Main(string[] args)
         {
             Console.WriteLine("Hi. Welcome to our Buffet. All you can eat for $9.99! We only charge extra for soda. How many people are in your group? Please, parties of 6 or lower.");
-
             int P = int.Parse(Console.ReadLine());
             
 
@@ -51,12 +50,14 @@ namespace deliverable2
 
                 double dtotal = (soda * 2.99);
                 double total = buffet + dtotal;
-                Console.WriteLine($"So you had {soda} sodas at $2.99 each.");
-                Console.WriteLine($"So you had {water} waters that are free.");
+                var sodas = soda > 1 ? "sodas" : "soda";
+                var waters = water > 1 ? "waters" : "water";
+                Console.WriteLine($"So you had {soda} {sodas} at $2.99 each.");
+                Console.WriteLine($"So you had {water} {waters} that are free.");
                 Console.WriteLine($"and {P} people for the buffet");
                 Console.WriteLine($"your total for food will be ${buffet}.");
                 Console.WriteLine($"your total for drinks will be ${dtotal}.");
-                Console.WriteLine($"your total will be ${total}.");
+                Console.WriteLine($"your total will be ${total= Math.Round(total, 2)}.");
 
             }
             else
